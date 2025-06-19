@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -26,92 +27,52 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
-          <ol>
-            <li>
-              Get started by editing <code>pages/index.js</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
-
-          <div className={styles.ctas}>
-            <a
-              className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Deploy now
-            </a>
-            <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.secondary}
-            >
-              Read our docs
-            </a>
+          {/* Left Hero Section */}
+          <div className={styles.leftherosection}>
+            <div className={styles.image}>
+              <Image src="/hero.jpg" alt="Coding" width={1000} height={600} />
+              <div className={styles.content}>
+                <h5>Software</h5>
+                <h2>Running macOS and Windows 10</h2>
+                <h2>on the Same Computer</h2>
+                <p>
+                  Cursus iaculis etiam in In nullam donec sem sed consequat
+                  scelerisque nibh amet, massa egestas risus, gravida vel amet,
+                  imperdiet ...
+                </p>
+              </div>
+            </div>
           </div>
+
+  <div className={styles.rightherosection}>
+        <div className={styles.img}>
+
+        </div>
+
+        <div className={styles.rightcontent}>
+          <h4>How to Learn Javascript in 2025?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laudantium, labore aliquid esse corporis debitis dolorum repellendus maxime molestiae,.....</p>
+         
+           <button className={styles.button}><Link href="/blogs">Read More....</Link></button>
+       
+        </div>
+
+        <div className={styles.rightcontent}>
+          <h4>How to Learn Javascript in 2025?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus eius quae cumque nisi omnis blanditiis dolor, exercitationem commodi! Labore?.....</p>
+          <button className={styles.button}><Link href="/blogs">Read More....</Link></button>
+        </div>
+
+        <div className={styles.rightcontent}>
+          <h4>How to Learn Javascript in 2025?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla fugiat dolorem qui harum, quas culpa dolores corrupti sapiente molestiae?.....</p>
+          <button className={styles.button}><Link href="/blogs">Read More....</Link></button>
+        </div>
+      </div>
+          
         </main>
-        <footer className={styles.footer}>
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-            Learn
-          </a>
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/window.svg"
-              alt="Window icon"
-              width={16}
-              height={16}
-            />
-            Examples
-          </a>
-          <a
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/globe.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            />
-            Go to nextjs.org →
-          </a>
-        </footer>
       </div>
     </>
   );
 }
+
